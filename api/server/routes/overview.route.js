@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const {
-  Test
+  AllProduct
 } = require("../controllers/overview.controller");
-router.get("/test", async (req, res) => {
-    await Test(req, res);
+router.get("/products", async (req, res) => {
+    await AllProduct(req, res);
 });
 module.exports.OverViewRoute = router;
